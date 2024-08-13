@@ -1,0 +1,1498 @@
+[
+  {
+    "metric": "apiextensions_openapi_v2_regeneration_count",
+    "drop_labels": [
+      "crd",
+      "reason"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiextensions_openapi_v3_regeneration_count",
+    "drop_labels": [
+      "crd",
+      "group",
+      "reason",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_admission_controller_admission_duration_seconds_bucket",
+    "drop_labels": [
+      "name",
+      "operation",
+      "rejected",
+      "type"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_admission_webhook_admission_duration_seconds_bucket",
+    "drop_labels": [
+      "name",
+      "operation",
+      "rejected",
+      "type"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_cache_list_fetched_objects_total",
+    "drop_labels": [
+      "index",
+      "resource_prefix"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_cache_list_returned_objects_total",
+    "drop_labels": [
+      "resource_prefix"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_cache_list_total",
+    "drop_labels": [
+      "index",
+      "resource_prefix"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_client_certificate_expiration_seconds_bucket",
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_delegated_authn_request_duration_seconds_bucket",
+    "drop_labels": [
+      "code",
+      "instance",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_flowcontrol_demand_seats_bucket",
+    "drop_labels": [
+      "priority_level"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_flowcontrol_priority_level_request_utilization_bucket",
+    "drop_labels": [
+      "phase",
+      "priority_level"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_flowcontrol_priority_level_seat_utilization_bucket",
+    "drop_labels": [
+      "priority_level"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_flowcontrol_request_execution_seconds_bucket",
+    "drop_labels": [
+      "flow_schema",
+      "priority_level",
+      "type"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_flowcontrol_request_wait_duration_seconds_bucket",
+    "drop_labels": [
+      "flow_schema",
+      "priority_level"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_longrunning_requests",
+    "drop_labels": [
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "apiserver_request_body_size_bytes_bucket",
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_body_size_bytes_count",
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_body_size_bytes_sum",
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_duration_seconds_bucket",
+    "drop_labels": [
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_duration_seconds_count",
+    "drop_labels": [
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_duration_seconds_sum",
+    "drop_labels": [
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_sli_duration_seconds_bucket",
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_sli_duration_seconds_count",
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_sli_duration_seconds_sum",
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_request_total",
+    "drop_labels": [
+      "code",
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_response_sizes_bucket",
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_response_sizes_count",
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_response_sizes_sum",
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_storage_data_key_generation_duration_seconds_bucket",
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_storage_list_evaluated_objects_total",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_storage_list_fetched_objects_total",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_storage_list_returned_objects_total",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_storage_list_total",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_storage_objects",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "apiserver_watch_cache_events_dispatched_total",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_watch_cache_initializations_total",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_watch_events_sizes_bucket",
+    "drop_labels": [
+      "group",
+      "kind",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_watch_events_sizes_count",
+    "drop_labels": [
+      "group",
+      "kind",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "apiserver_watch_events_sizes_sum",
+    "drop_labels": [
+      "group",
+      "kind",
+      "version"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "authentication_token_cache_request_duration_seconds_bucket",
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "status"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "cluster_quantile:apiserver_request_sli_duration_seconds:histogram_quantile",
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "cluster_verb_scope_le:apiserver_request_sli_duration_seconds_bucket:increase1h",
+    "drop_labels": [
+      "scope",
+      "verb"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "cluster_verb_scope_le:apiserver_request_sli_duration_seconds_bucket:increase30d",
+    "drop_labels": [
+      "scope",
+      "verb"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "code_resource:apiserver_request_total:rate5m",
+    "drop_labels": [
+      "code",
+      "resource",
+      "verb"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_blkio_device_usage_total",
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "major",
+      "minor",
+      "name",
+      "namespace",
+      "node",
+      "operation",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_fs_reads_bytes_total",
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_fs_reads_total",
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_fs_writes_bytes_total",
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_last_seen",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_memory_cache",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_memory_failcnt",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_memory_failures_total",
+    "drop_labels": [
+      "container",
+      "failure_type",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "scope",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_memory_kernel_usage",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_memory_max_usage_bytes",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_network_receive_bytes_total",
+    "drop_labels": [
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_receive_errors_total",
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_receive_packets_dropped_total",
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_receive_packets_total",
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_transmit_bytes_total",
+    "drop_labels": [
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_transmit_errors_total",
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_transmit_packets_dropped_total",
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_network_transmit_packets_total",
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_oom_events_total",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "container_processes",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_sockets",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_start_time_seconds",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_threads",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "container_ulimits_soft",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "csi_operations_seconds_bucket",
+    "drop_labels": [
+      "grpc_status_code",
+      "instance",
+      "method_name",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "etcd_request_duration_seconds_bucket",
+    "drop_labels": [
+      "operation",
+      "type"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "etcd_request_duration_seconds_count",
+    "drop_labels": [
+      "operation",
+      "type"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "etcd_request_duration_seconds_sum",
+    "drop_labels": [
+      "operation",
+      "type"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kube_pod_status_qos_class",
+    "drop_labels": [
+      "namespace",
+      "pod",
+      "qos_class",
+      "uid"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "kube_pod_status_ready",
+    "drop_labels": [
+      "condition",
+      "namespace",
+      "pod",
+      "uid"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "kube_pod_status_reason",
+    "drop_labels": [
+      "namespace",
+      "pod",
+      "reason",
+      "uid"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "kube_pod_status_scheduled",
+    "drop_labels": [
+      "condition",
+      "namespace",
+      "pod",
+      "uid"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "kube_pod_tolerations",
+    "drop_labels": [
+      "effect",
+      "key",
+      "namespace",
+      "operator",
+      "pod",
+      "toleration_seconds",
+      "uid"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "kubelet_cgroup_manager_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_container_log_filesystem_used_bytes",
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "service",
+      "uid"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "kubelet_http_requests_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "long_running",
+      "method",
+      "node",
+      "path",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_pod_start_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_pod_start_sli_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_pod_start_total_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_pod_worker_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_runtime_operations_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_runtime_operations_duration_seconds_count",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_runtime_operations_duration_seconds_sum",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_runtime_operations_total",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubelet_volume_metric_collection_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "metric_source",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "kubernetes_feature_enabled",
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "name",
+      "namespace",
+      "node",
+      "service",
+      "stage"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "node_namespace_pod_container:container_memory_cache",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "node_namespace_pod_container:container_memory_rss",
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "node_nfs_requests_total",
+    "drop_labels": [
+      "instance",
+      "method",
+      "pod",
+      "proto"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "node_scrape_collector_duration_seconds",
+    "drop_labels": [
+      "collector",
+      "instance",
+      "pod"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "node_scrape_collector_success",
+    "drop_labels": [
+      "collector",
+      "instance",
+      "pod"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "prober_probe_duration_seconds_bucket",
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "probe_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "prober_probe_duration_seconds_count",
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "probe_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "prober_probe_duration_seconds_sum",
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "probe_type",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "prober_probe_total",
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "pod_uid",
+      "probe_type",
+      "result",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "rest_client_rate_limiter_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "service",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "rest_client_request_duration_seconds_bucket",
+    "drop_labels": [
+      "endpoint",
+      "host",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "rest_client_request_size_bytes_bucket",
+    "drop_labels": [
+      "endpoint",
+      "host",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "rest_client_response_size_bytes_bucket",
+    "drop_labels": [
+      "endpoint",
+      "host",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "verb"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "storage_operation_duration_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_name",
+      "service",
+      "status",
+      "volume_plugin"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "storage_operation_duration_seconds_count",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_name",
+      "service",
+      "status",
+      "volume_plugin"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "storage_operation_duration_seconds_sum",
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_name",
+      "service",
+      "status",
+      "volume_plugin"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "volume_operation_total_seconds_bucket",
+    "drop_labels": [
+      "instance",
+      "node",
+      "plugin_name",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "watch_cache_capacity",
+    "drop_labels": [
+      "resource"
+    ],
+    "aggregations": [
+      "count",
+      "sum"
+    ]
+  },
+  {
+    "metric": "workqueue_queue_duration_seconds_bucket",
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "name",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  },
+  {
+    "metric": "workqueue_work_duration_seconds_bucket",
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "name",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "aggregations": [
+      "sum:counter"
+    ]
+  }
+]
