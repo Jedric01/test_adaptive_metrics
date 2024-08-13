@@ -1,1 +1,2048 @@
-[]
+[
+  {
+    "metric": "apiextensions_openapi_v2_regeneration_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "crd",
+      "reason"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiextensions_openapi_v3_regeneration_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "crd",
+      "group",
+      "reason",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_admission_controller_admission_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "name",
+      "operation",
+      "rejected",
+      "type"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_admission_webhook_admission_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "name",
+      "operation",
+      "rejected",
+      "type"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_cache_list_fetched_objects_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "index",
+      "resource_prefix"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_cache_list_returned_objects_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource_prefix"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_cache_list_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "index",
+      "resource_prefix"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_client_certificate_expiration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_delegated_authn_request_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "code",
+      "instance",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_flowcontrol_demand_seats_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "priority_level"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_flowcontrol_priority_level_request_utilization_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "phase",
+      "priority_level"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_flowcontrol_priority_level_seat_utilization_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "priority_level"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_flowcontrol_request_execution_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "flow_schema",
+      "priority_level",
+      "type"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_flowcontrol_request_wait_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "flow_schema",
+      "priority_level"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_longrunning_requests",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_body_size_bytes_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_body_size_bytes_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_body_size_bytes_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_duration_seconds_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_duration_seconds_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_sli_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_sli_duration_seconds_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_sli_duration_seconds_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_request_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "code",
+      "component",
+      "dry_run",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_response_sizes_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_response_sizes_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_response_sizes_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "component",
+      "group",
+      "resource",
+      "scope",
+      "subresource",
+      "verb",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_storage_data_key_generation_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_storage_list_evaluated_objects_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_storage_list_fetched_objects_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_storage_list_returned_objects_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_storage_list_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_storage_objects",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_watch_cache_events_dispatched_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_watch_cache_initializations_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_watch_events_sizes_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "group",
+      "kind",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_watch_events_sizes_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "group",
+      "kind",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "apiserver_watch_events_sizes_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "group",
+      "kind",
+      "version"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "authentication_token_cache_request_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "status"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "cluster_quantile:apiserver_request_sli_duration_seconds:histogram_quantile",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "cluster_verb_scope_le:apiserver_request_sli_duration_seconds_bucket:increase1h",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "scope",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "cluster_verb_scope_le:apiserver_request_sli_duration_seconds_bucket:increase30d",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "scope",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "code_resource:apiserver_request_total:rate5m",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "code",
+      "resource",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_blkio_device_usage_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "major",
+      "minor",
+      "name",
+      "namespace",
+      "node",
+      "operation",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_fs_reads_bytes_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_fs_reads_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_fs_writes_bytes_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "device",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_last_seen",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_memory_cache",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_memory_failcnt",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_memory_failures_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "failure_type",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "scope",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_memory_kernel_usage",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_memory_max_usage_bytes",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_receive_bytes_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_receive_errors_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_receive_packets_dropped_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_receive_packets_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_transmit_bytes_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_transmit_errors_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_transmit_packets_dropped_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_network_transmit_packets_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "id",
+      "instance",
+      "interface",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_oom_events_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_processes",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_sockets",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_start_time_seconds",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_threads",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "container_ulimits_soft",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "csi_operations_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "grpc_status_code",
+      "instance",
+      "method_name",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "etcd_request_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "operation",
+      "type"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "etcd_request_duration_seconds_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "operation",
+      "type"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "etcd_request_duration_seconds_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "operation",
+      "type"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kube_pod_status_qos_class",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "namespace",
+      "pod",
+      "qos_class",
+      "uid"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kube_pod_status_ready",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "condition",
+      "namespace",
+      "pod",
+      "uid"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kube_pod_status_reason",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "namespace",
+      "pod",
+      "reason",
+      "uid"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kube_pod_status_scheduled",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "condition",
+      "namespace",
+      "pod",
+      "uid"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kube_pod_tolerations",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "effect",
+      "key",
+      "namespace",
+      "operator",
+      "pod",
+      "toleration_seconds",
+      "uid"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_cgroup_manager_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_container_log_filesystem_used_bytes",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "service",
+      "uid"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_http_requests_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "long_running",
+      "method",
+      "node",
+      "path",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_pod_start_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_pod_start_sli_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_pod_start_total_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_pod_worker_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_runtime_operations_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_runtime_operations_duration_seconds_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_runtime_operations_duration_seconds_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_runtime_operations_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubelet_volume_metric_collection_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "metric_source",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "kubernetes_feature_enabled",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "name",
+      "namespace",
+      "node",
+      "service",
+      "stage"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "node_namespace_pod_container:container_memory_cache",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "node_namespace_pod_container:container_memory_rss",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "id",
+      "image",
+      "instance",
+      "name",
+      "namespace",
+      "node",
+      "pod",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "node_nfs_requests_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "method",
+      "pod",
+      "proto"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "node_scrape_collector_duration_seconds",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "collector",
+      "instance",
+      "pod"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "node_scrape_collector_success",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "collector",
+      "instance",
+      "pod"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "prober_probe_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "probe_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "prober_probe_duration_seconds_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "probe_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "prober_probe_duration_seconds_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "probe_type",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "prober_probe_total",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "container",
+      "instance",
+      "namespace",
+      "node",
+      "pod",
+      "pod_uid",
+      "probe_type",
+      "result",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "rest_client_rate_limiter_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "service",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "rest_client_request_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "host",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "rest_client_request_size_bytes_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "host",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "rest_client_response_size_bytes_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "host",
+      "instance",
+      "metrics_path",
+      "namespace",
+      "node",
+      "service",
+      "verb"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "storage_operation_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_name",
+      "service",
+      "status",
+      "volume_plugin"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "storage_operation_duration_seconds_count",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_name",
+      "service",
+      "status",
+      "volume_plugin"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "storage_operation_duration_seconds_sum",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "operation_name",
+      "service",
+      "status",
+      "volume_plugin"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "volume_operation_total_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "instance",
+      "node",
+      "plugin_name",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "watch_cache_capacity",
+    "match_type": "",
+    "aggregations": [
+      "count",
+      "sum"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "resource"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "workqueue_queue_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "name",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  },
+  {
+    "metric": "workqueue_work_duration_seconds_bucket",
+    "match_type": "",
+    "aggregations": [
+      "sum:counter"
+    ],
+    "drop": false,
+    "drop_labels": [
+      "endpoint",
+      "instance",
+      "metrics_path",
+      "name",
+      "namespace",
+      "node",
+      "service"
+    ],
+    "keep_labels": [],
+    "aggregation_delay": "",
+    "aggregation_interval": ""
+  }
+]
